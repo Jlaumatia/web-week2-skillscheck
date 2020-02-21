@@ -24,7 +24,7 @@ const name = 'Jordan';
 //Create a variable called 'phrase' that is initialized as an empty string. 
 
 // Code Here
-const phrase = ''
+const phrase = '';
 
 //////////////////STEP 5////////////////////
 //Create an if statement that checks to see if the lovesCode variable is equal to true.
@@ -32,11 +32,14 @@ const phrase = ''
 //'I do not love to code'
 
 // Code Here
-if (lovesCode === true) {
-    return 'I love code'
-} else {
-    return 'I do not love to code'
+function love() {
+    if (lovesCode === true) {
+        return 'I love code'
+    } else {
+        return 'I do not love to code'
+    }
 }
+
 
 //////////////////Wrap Up////////////////////
 // Refresh the index.html page in your browser. You should now see a poem that uses the variables from above.
