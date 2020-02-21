@@ -1,0 +1,18 @@
+header {
+    height: 60px;
+    background-color: rgb(129, 128, 124);
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 65px;
+    margin-bottom: 15px;
+    font-size: x-large;
+    color: white;
+}
+
+.links {
+    width: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
