@@ -5,7 +5,7 @@
 //Create an array called 'groceries' that contains three grocery items as strings. 
 
 // Code Here
-const groceries = [item1,item2,item3];
+const groceries = ['item1','item2','item3'];
 
 //////////////////STEP 2////////////////////
 //Create a variable called 'yourName' that is assigned the value of your name as a string. 
@@ -31,7 +31,8 @@ function setGroceryListTitle(x) {
 
 // Code Here
 function addItem(item) {
-
+     groceries.push(item)
+     displayData()
 }
 
 //////////////////STEP 5////////////////////
@@ -41,13 +42,36 @@ function addItem(item) {
 
 // Code Here
 function removeItem(index) {
-
+ for ( let i = 0; i < array.length; i++) {
+  if( index[i] === index) {
+      groceries.splice([1])
+      displayData()
+  }   
+  
+ }
+ 
+ 
 }
 
 //////////////////STEP 6////////////////////
-//Create a function called 'checkGroceryCount'. Inside of checkGroceryCount, you're going to check the total number of groceries in your groceries array using .length. Using an if/else statement, check if the number of groceries is greater than or equal to 5. If it is, return the string 'That looks like a big trip' from the function. If the number of groceries is equal to one, return the string '1 item'. If the amount of groceries is between 1 and 5, return the string 'NUMBEROFGROCERIES items' with NUMBEROFGROCERIES replaced by the number of items in your groceries array.
+//Create a function called 'checkGroceryCount'. Inside of checkGroceryCount, 
+//you're going to check the total number of groceries in your groceries array using .length. 
+//Using an if/else statement, check if the number of groceries is greater than or equal to 5. 
+//If it is, return the string 'That looks like a big trip' from the function. 
+//If the number of groceries is equal to one, return the string '1 item'. 
+//If the amount of groceries is between 1 and 5, return the string 'NUMBEROFGROCERIES items' with NUMBEROFGROCERIES 
+//replaced by the number of items in your groceries array.
 
 // Code Here
+function checkGroceryCount() {
+ if( groceries.length >= 5 ) {
+     return 'That looks like a big trip'
+ } else if ( groceries.length === 1) {
+     return '1 item'
+ } else {
+     return groceries.length + 'items'
+ }
+}
 
 //////////////////STEP 6////////////////////
 // Refresh the index.html page. You should now see the same thing you saw when you first 

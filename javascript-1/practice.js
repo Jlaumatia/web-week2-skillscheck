@@ -125,10 +125,10 @@ function bigOrSmall(arr) {
 	var answers = [];
 	 
 	for ( var i = 0; i < arr.length; i++) {
-		if( arr > 100) {
-			return 'big'
+		if( arr[i] > 100) {
+			answers.push('big')
 		} else {
-			return 'small'
+			answers.push('small')
 		}
 	}
 	return answers;
@@ -202,9 +202,9 @@ var filtered = myNumbers.filter(function(number) {
 
 // Code Here
 const myNumbersIndex = [];
-myNumbersIndex = myNumbers.forEach(function(item){
-	myNumbers.item.push(myNumbersIndex);
-})
+ myNumbers.forEach((item,index) => {
+	myNumbersIndex.push(index)
+ })
 
 
 
@@ -244,8 +244,11 @@ let enemies = people.filter(people => people.friend === false);
 //and store that value in a variable named 'totallyAwesome'. Use .reduce().
 
 // Code Here
-let totallyAwesome = people.reduce(getValue)
-function getValue(awesomeLevel, num){
-	return awesomeLevel + num;
+let totallyAwesome = [];
+totallyAwesome = people.reduce((accumulator,currentValue,index,arr) => {
+ accumulator + arr[index].awesomeLevel
+ 
+})
 
-}
+
+

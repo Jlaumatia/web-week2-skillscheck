@@ -1,18 +1,80 @@
-header {
-    height: 60px;
-    background-color: rgb(129, 128, 124);
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
-    padding-left: 65px;
-    margin-bottom: 15px;
-    font-size: x-large;
+body {
+    background-color: rgb(250, 236, 236);
     color: white;
+    margin: 0;
+    padding: 0;
+
 }
 
-.links {
-    width: 10px;
+header {
+    background-color: gray;
+    padding: 2%;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     
+}
+
+h1 {
+    color: white;
+    font-size: xx-large;
+    display: inline-block;
+    
+    
+}
+
+section {
+    background-color:white;
+    color: rgb(170, 161, 161);
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.row_two {
+    color: rgb(208, 221, 86);
+    background-color: black;
+    justify-content: center;
+    font-size: 5rem;
+    padding: 200px;
+    
+}
+
+span {
+    background-color: rgb(231, 146, 89);
+    display: inline-block;
+    width: 500px;
+    height: 250px;
+    margin: auto;
+    
+    
+}
+
+
+div {
+
+    background-color: rgb(178, 233, 233);
+    display: inline-block;
+    width: 260px;
+    height: 250px;
+    margin: auto;
+    border-radius: 25px;
+}
+
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 5%;
 }
